@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="details.js"></script>
+</head>
+<body>
+    <p *ngFor="let item of arr">
+        
+    </p>
+    <div >
+    <ul *ngFor="let item of arr">
+        <li>
+            <h2>
+                Name: {{item["fullName"]}}
+            </h2>
+            <h3>
+                Email: {{item["email"]}}
+            </h3>
+            <h3>
+                Address: {{item["address"]}}
+            </h3>
+            <p>
+                Message: {{item["message"]}}
+            </p>
+           
+        </li>
+        <button id="hk">Delete</button>
+    </ul>
+</div>
+</body>
+</html>
